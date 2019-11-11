@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+         href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+      <title>Fondation Miss Afrique Canada </title>
+   </head>
+   <body>
+      <header>
+         <div class="logo-container">
+            <img src="./img/logo.svg" alt="logo" />
+            <h4 class="logo"> Miss Afrique Canada </h4>
+         </div>
+         <nav>
+            <ul class="nav-links">
+               <li><a class="nav-link" href="https://www.facebook.com/pg/missafriquecanada/events/?ref=page_internal" target="_blank">Evenements</a></li>
+               <li><a class="nav-link" href="#projects"> Projets Humanitaires </a></li>
+               <li><a class="nav-link" href="#contact"> Contact </a></li>
+            </ul>
+         </nav>
+         <div class="cart">
+            <img src="./img/cart.svg" alt="cart" />
+         </div>
+      </header>
+      <main>
+         <section class="presentation">
+            <div class="introduction">
+               <div class="intro-text">
+                  <h1> Fondation Miss Afrique Canada </h1>
+                  <p>
+                     L' expression de l'heritage Africain
+                  </p>
+               </div>
+               <div class="cta">
+                  <a href="https://fr.gofundme.com/f/tabsa7-pour-la-fondation-mac" target="_blank">
+                  Faites un don
+                  </a>
+               </div>
+            </div>
+            <div class="gallery">
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+
+                           <img src="./img/missAfriquePeople.jpg" alt="MA2019" />
+
+                      </div>
+                      <div class="swiper-slide">
+
+                           <img src="./img/africanValues.jpg" alt="MA2019" />
+
+                      </div>
+                      <div class="swiper-slide">
+
+                           <img src="./img/MA2019.png.jpg" alt="MA2019" />
+
+                      </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+         </section>
+         <!--ª
+         <div class="laptop-select">
+            <img src="./img/arrow-left.svg" alt="" />
+            <img src="./img/dot.svg" alt="" />
+            <img src="./img/dot-full.svg" alt="" />
+            <img src="./img/dot-full.svg" alt="" />
+            <img src="./img/arrow-right.svg" alt="" />
+         </div>
+         <img class="big-circle" src="./img/big-eclipse.svg" alt="" />
+         <img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
+         <img class="small-circle" src="./img/small-eclipse.svg" alt="" />
+       -->
+      </main>
+      <section id="projects">
+        <div class="values">
+          <h2> L'humanitaire au coeur de nos valeurs </h2>
+           <p> Miss Afrique Canada est une aventure qui met en exergue l’expression de l’héritage africain. À travers ce concours, une ambassadrice est élue avec deux dauphines pour des projets humanitaires et entrepreunariat dans divers pays d’Afrique et au Canada. L’ensemble des projets servent à non seulement mettre en valeur les mœurs et la culture africaine, mais d’encourager les projets déjà mis sur pied afin de bonifier l’esprit d’entrepreunariat de l’Afrique et de sa diaspora, et d’augmenter le climat de collaboration des terres d’accueil des membres de cette diaspora. L’an dernier, notre organisme a participé à plusieurs projets humanitaires, parmi lesquels un orphelinat en Côte-d’Ivoire, et un projet d’assainissement de milieu urbains en Guinée Conakry.</p>
+            <p>Notre implication et collaboration à ces projets nous ont coûté environ 15 000 $ CAN. Cela n’a pu être possible que par l’entremise de vos dons.</p>
+        </div>
+         <div class="mission">
+           <h2>Notre mission</h2>
+           <ul>
+             <li>Accès à l’éducation et à la formation promotionnelle :</li>
+             <li>Aider à améliorer les conditions de vie des personnes vulnérables :</li>
+             <li>Apporter de l’aide à plusieurs orphelinats dans tout l’Afrique et au Canada, et partout dans le monde si possible :</li>
+             <li>Mouvement mondial pour le droit des filles :</li>
+             <li>Situation d'urgence (Catastrophes et maladies graves) :</li>
+
+           </ul>
+           <p>
+              Parmi les différentes thématiques sur lesquelles la fondation MAC intervient, l'éducation tient une place importante. En effet, elle constitue la base de tout développement durable et de ce fait, elle doit être valorisée à tout point de vue en Afrique où le taux d’analphabétisme est alarmant. Nous avons mis sur pied une structure de liaison et d’entraide entre l’Afrique et les pays du nord. Votre support permettrait de mettre de l’avant les structures déjà existantes et favoriser l’émergence économique de l’Afrique.
+           </p>
+         </div>
+
+      </section>
+      <section id="contact">
+        <h1> Contactez-nous </h1>
+        <div id = "after_submit"></div>
+        <form id= "contact_form" action= "#" method= "POST" enctype="multipart/form-data">
+           <div class = "row">
+              <label class = "required" for="name"> Your name:</label><br/>
+              <input id="name" class = "input" name="name" type="text" value = "" size="30" /><br/>
+              <span id = "name_validation" class="error_message" ></span>
+           </div>
+           <div class = "row">
+              <label class = "required" for="email"> Your email:</label><br />
+              <input id="email" class="input" name="email" type="text" value="" size="30"/><br />
+              <span id="email_validation" class="error_message"></span>
+           </div>
+           <div class="row">
+              <label class="required" for="message"> Your message: </label><br />
+              <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+              <span id="message_validation" class="error_message"></span>
+           </div>
+           <div class="btn-wrapper">
+              <input id="submit_btton" type="submit" value="Send email" />
+           </div>
+        </form>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+      <script src="./app.js"></script>
+   </body>
+</html>
